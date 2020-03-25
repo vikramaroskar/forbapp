@@ -1,0 +1,74 @@
+{
+	"info": {
+		"_postman_id": "8525391a-ec89-4a36-adf0-e5ee3ef8a5b3",
+		"name": "Forb",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "PlaceOrder BUY",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"order_type\":\"BUY\",\n\t\"order_price\": 1200,\n\t\"order_quantity\": 20\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/place-order",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"place-order"
+					]
+				},
+				"description": "Place order"
+			},
+			"response": []
+		},
+		{
+			"name": "PlaceOrder SELL",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"order_type\":\"SELL\",\n\t\"order_price\": 900,\n\t\"order_quantity\": 2\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/place-order",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"place-order"
+					]
+				},
+				"description": "Place order"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
